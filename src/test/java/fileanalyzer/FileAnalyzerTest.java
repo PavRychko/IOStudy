@@ -1,4 +1,6 @@
+package fileanalyzer;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -29,8 +31,8 @@ public class FileAnalyzerTest {
     @DisplayName("how many times word is repeated in a text test")
     @Test
     public void wordsRepeatCountTest() throws IOException {
-        assertEquals(10, fileAnalyzer.wordRepeatCounts("заяц"));
-        assertEquals(0, fileAnalyzer.wordRepeatCounts("Волк"));
+        Assertions.assertEquals(10, fileAnalyzer.wordRepeatCounts("заяц"));
+        Assertions.assertEquals(0, fileAnalyzer.wordRepeatCounts("Волк"));
 
 
     }
