@@ -31,6 +31,14 @@ public class FileManager {
         return filesInDirCount;
     }
 
+    public static void copy(String from, String to){
+
+    }
+
+    public static void move(String from, String to){
+
+    }
+
     private static int parentDirCount(File file){
         if(Objects.equals(file.getParent(), null)){
             return 0;
